@@ -1,23 +1,23 @@
 {
-  "version": "0.2.2",
-  "name": "language-glsl",
-  "description": "Atom language support for GLSL",
+  "version": "0.0.1",
+  "name": "language-vex",
+  "description": "Atom language support for VEX",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hughsk/language-glsl.git"
+    "url": "https://github.com/eestrada/language-vex.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hughsk/language-glsl/issues"
+    "url": "https://github.com/eestrada/language-vex/issues"
   },
   "engines": {
     "atom": "*",
     "node": "*"
   },
-  "homepage": "https://github.com/hughsk/language-glsl",
+  "homepage": "https://github.com/eestrada/language-vex",
   "keywords": [
     "language",
-    "glsl",
+    "vex",
     "atom",
     "editor",
     "syntax"
