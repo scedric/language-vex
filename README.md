@@ -1,13 +1,8 @@
-# language-glsl package
+# language-vex package
 
-Adds syntax highlighting and snippets to GLSL files in Atom.
+Adds syntax highlighting and snippets to Houdini VEX files in Atom.
 
 Originally
-[converted](http://atom.io/docs/latest/converting-a-text-mate-bundle)
-from [polym0rph](https://github.com/polym0rph)'s
-[GLSL TextMate bundle](https://github.com/polym0rph/GLSL.tmbundle).
-
-Extended to support [glslify](http://github.com/stackgl/glslify) require/export
-statements.
-
-![language-glsl](http://imgur.com/dJGHJ1m.png)
+[forked](http://atom.io/docs/latest/converting-a-text-mate-bundle)
+from [hughsk](https://github.com/hughsk)'s
+[GLSL Atom package](https://github.com/hughsk/language-glsl).
