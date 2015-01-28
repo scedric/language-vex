@@ -10,9 +10,13 @@
 #pragma glslify: random = require(glsl-random)
 #pragma glslify: export(x)
 
-void main() {
-  vec3 a = noise(gl_FragColor.xy);
-  vec3 b = y.xyz;
+surface test_surf(vector clr) {
+        vector a = noise(gl_FragColor.xy);
+        vector b = y.xyz;
 
-  a.xyz = gl_FragColor.xyz;
+        a.xyz = gl_FragColor.xyz;
+
+        Cf = set{1, 0, 0};
+        Of = set{1, 1, 1};
+
 }

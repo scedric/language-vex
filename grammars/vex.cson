@@ -7,11 +7,14 @@
 'name': 'VEX'
 'patterns': [
   {
+    'include': 'source.c'
+  }
+  {
     'match': '\\.(x|y|z|w|r|g|b|a){1,4}'
     'name': 'keyword.operator.vex'
   }
   {
-    'match': '\\b(break|case|continue|default|discard|do|else|for|if|return|switch|while|export|gather|illuminance|import)\\b'
+    'match': '\\b(break|case|continue|default|discard|do|else|for|foreach|if|return|switch|while|export|gather|illuminance|import)\\b'
     'name': 'keyword.control.vex'
   }
   {
@@ -32,7 +35,7 @@
   }
   {
     # TODO: Add remaining VEX builtin functions
-    'match': '\\b(Du|Dv|Dw|abs|acos|addattribute|addgroup|addpoint|addprim|addvariablename|addvertex|albedo|alphaname|ambient|anoise|area|array|arraylength|ashikhmin|asin|assign|atan|atan2|atof|atoi|atten|attribsize|attribtype|avg|binput|blinn|blinnBRDF|bumpmap|bumpmapA|bumpmapB|bumpmapG|bumpmapL|bumpmapR|bumpname|ceil|ch|ch3|ch4|chend|chendf|chf|chi|chinput|chname|chnumchan|chp|chramp|chrate|chs|chsraw|chstart|chstartf|chstartt|chv|cinput|ckspline|clamp|clip|colormap|colorname|computenormal|concat|cone|cos|cosh|cracktransform|cross|cspline|ctransform|cvex_bsdf|degrees|depthmap|detail|detailattribsize|detailattribtype|detailintrinsic|determinant|diffuse|diffuseBRDF|dihedral|dimport|distance|distance2|dot|dsmpixel|eigenvalues|emission_bsdf|environment|erf|erfc|eval_bsdf|exp|fastshadow|filtershadow|filterstep|findattribval|findattribvalcount|finput|fit|fit01|fit10|fit11|floor|flownoise|flowpnoise|foreach|forpoints|frac|fresnel|fromNDC|frontface|gather|geoself|getattribute|getbbox|getblurP|getbounces|getbounds|getcomp|getfogname|getglobalraylevel|getlightname|getlights|getobjectname|getphotonlight|getprimid|getptextureid|getraylevel|getrayweight|gradient|gradient3d|hasdetailattrib|hasplane|haspointattrib|hasprimattrib|hasvertexattrib|hedge_dstpoint|hedge_dstvertex|hedge_equivcount)\\b'
+    'match': '\\b(Du|Dv|Dw|abs|acos|addattribute|addgroup|addpoint|addprim|addvariablename|addvertex|albedo|alphaname|ambient|anoise|area|array|arraylength|ashikhmin|asin|assign|atan|atan2|atof|atoi|atten|attribsize|attribtype|avg|binput|blinn|blinnBRDF|bumpmap|bumpmapA|bumpmapB|bumpmapG|bumpmapL|bumpmapR|bumpname|ceil|ch|ch3|ch4|chend|chendf|chf|chi|chinput|chname|chnumchan|chp|chramp|chrate|chs|chsraw|chstart|chstartf|chstartt|chv|cinput|ckspline|clamp|clip|colormap|colorname|computenormal|concat|cone|cos|cosh|cracktransform|cross|cspline|ctransform|cvex_bsdf|degrees|depthmap|detail|detailattribsize|detailattribtype|detailintrinsic|determinant|diffuse|diffuseBRDF|dihedral|dimport|distance|distance2|dot|dsmpixel|eigenvalues|emission_bsdf|environment|erf|erfc|eval_bsdf|exp|fastshadow|filtershadow|filterstep|findattribval|findattribvalcount|finput|fit|fit01|fit10|fit11|floor|flownoise|flowpnoise|forpoints|frac|fresnel|fromNDC|frontface|geoself|getattribute|getbbox|getblurP|getbounces|getbounds|getcomp|getfogname|getglobalraylevel|getlightname|getlights|getobjectname|getphotonlight|getprimid|getptextureid|getraylevel|getrayweight|gradient|gradient3d|hasdetailattrib|hasplane|haspointattrib|hasprimattrib|hasvertexattrib|hedge_dstpoint|hedge_dstvertex|hedge_equivcount)\\b'
     'name': 'support.function.vex'
   }
   {
@@ -60,9 +63,6 @@
       '6': { 'name': 'string.quoted.double' }
     }
     'end': '\\n'
-  }
-  {
-    'include': 'source.c'
   }
 ]
 'scopeName': 'source.vex'
